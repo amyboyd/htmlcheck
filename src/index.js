@@ -56,7 +56,7 @@ function resolveGlobs(globs) {
     return paths;
 }
 
-function copy(toCopy) {
+function copyObject(toCopy) {
     const copy = {};
     for (let key in toCopy) {
         if (toCopy[key] instanceof Array) {
@@ -71,7 +71,7 @@ function copy(toCopy) {
 }
 
 function escapeRegExp(string) {
-  return string.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+  return string.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&');
 }
 
 function rightTrim(string, char) {
@@ -86,7 +86,7 @@ function getUniqueAndSortedPaths(paths) {
 
     // Remove duplicates.
     paths = paths.filter(function(item, pos) {
-        return paths.indexOf(item) == pos;
+        return paths.indexOf(item) === pos;
     });
 
     return paths;
@@ -107,7 +107,7 @@ const builderMethods = {
      * @param {String} dir For example 'src/html/'.
      */
     inDir: function(dir) {
-        const self = copy(this);
+        const self = copyObject(this);
         self.dirs.push(dir);
         return self;
     },
@@ -118,7 +118,7 @@ const builderMethods = {
      * @param {String} path For example 'src/html/index.html'.
      */
     inFile: function(path) {
-        const self = copy(this);
+        const self = copyObject(this);
         self.files.push(path);
         return self;
     },
@@ -129,7 +129,7 @@ const builderMethods = {
      * @param {String} glob For example 'src/html/**.{html|twig}'.
      */
     inGlob: function(glob) {
-        const self = copy(this);
+        const self = copyObject(this);
         self.globs.push(glob);
         return self;
     },
@@ -138,7 +138,7 @@ const builderMethods = {
      * @param {String} selector A HTML query selector. For example 'a.button, button'.
      */
     forElements: function(selector) {
-        const self = copy(this);
+        const self = copyObject(this);
         self.selectors.push(selector);
         return self;
     },

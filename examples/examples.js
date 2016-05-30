@@ -31,8 +31,8 @@ htmlcheck
     .test(function(link) {
         function isAttributeOk(attribute) {
             const value = link.getAttribute(attribute);
-            return typeof value === "string" && value.length > 0;
-        };
+            return typeof value === 'string' && value.length > 0;
+        }
 
         const isOk = isAttributeOk('href') || isAttributeOk('ng-href') || isAttributeOk('ng-click');
 
