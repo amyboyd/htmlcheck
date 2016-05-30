@@ -1,0 +1,21 @@
+<!-- This "button" has an icon and aria-label, so it should pass both validations. -->
+<a class="button" aria-label="Save this page to your bookmarks">
+    <i class="icon icon-save"></i>
+    Save
+</a>
+
+<!-- This "button" has an icon, so it should pass the icon validation. It should fail the aria-label validation. -->
+<a class="button">
+    <i class="icon icon-edit"></i>
+    Edit
+</a>
+
+<!-- This "button" has an aria-label, so it should pass the aria-label validation. It should fail the icon validation. -->
+<button aria-label="Close">
+    X
+</a>
+
+<!-- This button doesn't have an icon or aria-label, so it should fail both validations. -->
+<button>
+    Delete
+</button>

@@ -1,0 +1,25 @@
+<!-- These links have actions, so they should pass the validation. -->
+<a ng-href="/article/{{ id }}">
+    View
+</a>
+
+<button ng-click="save()">
+    Save
+</button>
+
+<a href="/list">
+    Go to list
+</a>
+
+<!-- These links don't have actions, so they should fail the validation. -->
+<a>
+    Empty link action 1
+</a>
+
+<a href="">
+    Empty link action 2
+</a>
+
+<button ng-click="">
+    Empty link action 3
+</button>

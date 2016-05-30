@@ -1,0 +1,29 @@
+{
+  "name": "htmlcheck",
+  "version": "0.0.1",
+  "description": "Check HTML files for certain DOM structures and requirements",
+  "keywords": [
+    "html",
+    "validation"
+  ],
+  "main": "src/index.js",
+  "homepage": "https://github.com/amyboyd/htmlcheck",
+  "bugs": {
+    "url": "https://github.com/amyboyd/htmlcheck/issues",
+    "email": "amy@amyboyd.co.uk"
+  },
+  "scripts": {
+  },
+  "author": "Amy Boyd <amy@amyboyd.co.uk> (http://amyboyd.co.uk/)",
+  "dependencies": {
+    "glob": "^7.0.3",
+    "jsdom": "^9.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amyboyd/htmlcheck.git"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
