@@ -13,6 +13,7 @@
     "email": "amy@amyboyd.co.uk"
   },
   "scripts": {
+    "test": "tests/run-examples.py"
   },
   "author": "Amy Boyd <amy@amyboyd.co.uk> (http://amyboyd.co.uk/)",
   "dependencies": {
