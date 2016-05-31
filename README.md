@@ -70,6 +70,6 @@ API
 Tests
 -----
 
-To execute the tests, run `tests/run-examples.py`
+To execute the tests, run `npm run test`
 
 To execute the examples script, run `node examples/examples.js`

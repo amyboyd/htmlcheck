@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
 
 jshint -c tests/jshint.json src/ examples/
+
+if [[ $? != '0' ]]; then
+    echo 'JSHint failed'
+    exit 1
+fi
+
+echo 'JSHint passed'
