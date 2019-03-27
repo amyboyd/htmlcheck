@@ -18,7 +18,8 @@
   "author": "Amy Boyd <amy@amyboyd.co.uk> (http://amyboyd.co.uk/)",
   "dependencies": {
     "glob": "^7.0.3",
-    "jsdom": "^9.2.1"
+    "jsdom": "^9.2.1",
+    "jshint": "^2.10.2"
   },
   "repository": {
     "type": "git",

@@ -27,5 +27,9 @@ if stdout != '':
     print('Expected stdout to be empty, but was: ' + stdout)
     sys.exit(1)
 
+if process.returncode != 1:
+    print('Expected process to exit with code 1, but code was: %d' % process.returncode)
+    sys.exit(1)
+
 print('Passed')
 sys.exit(0)

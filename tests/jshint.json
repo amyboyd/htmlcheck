@@ -13,6 +13,7 @@
     "sub": true,
     "freeze": true,
     "esnext": true,
+    "loopfunc": true,
     "globals": {
     }
 }

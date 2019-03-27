@@ -57,7 +57,10 @@ function run(config, testerFunction) {
 
     for (let i = 0; i < uniqueFiles.length; i++) {
         for (let ii = 0; ii < config.selectors.length; ii++) {
-            testFile(uniqueFiles[i], config.selectors[ii], testerFunction, console.error);
+            testFile(uniqueFiles[i], config.selectors[ii], testerFunction, function(error) {
+                console.error(error);
+                process.exitCode = 1;
+            });
         }
     }
 }
