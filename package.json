@@ -1,6 +1,6 @@
 {
   "name": "htmlcheck",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Check HTML files for certain DOM structures and requirements",
   "keywords": [
     "html",
